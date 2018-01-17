@@ -1,0 +1,1447 @@
+Starting parse
+Entering state 0
+Reducing stack by rule 7 (line 53):
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --(end of buffer or a NUL)
+--accepting rule at line 34 ("# 1 "11-numbers.oc"")
+--included # 1 "11-numbers.oc"
+--accepting rule at line 39 ("
+")
+--accepting rule at line 34 ("# 1 "<built-in>"")
+--included # 1 "<built-in>"
+--accepting rule at line 39 ("
+")
+--accepting rule at line 34 ("# 1 "<command-line>"")
+--included # 1 "<command-line>"
+--accepting rule at line 39 ("
+")
+--accepting rule at line 34 ("# 1 "11-numbers.oc"")
+--included # 1 "11-numbers.oc"
+--accepting rule at line 39 ("
+")
+--accepting rule at line 39 ("
+")
+--accepting rule at line 39 ("
+")
+--accepting rule at line 34 ("# 1 "oclib.oh" 1")
+--included # 1 "oclib.oh"
+--accepting rule at line 39 ("
+")
+--accepting rule at line 34 ("# 28 "oclib.oh"")
+--included # 28 "oclib.oh"
+--accepting rule at line 39 ("
+")
+--accepting rule at line 48 ("void")
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 5
+Reducing stack by rule 14 (line 90):
+   $1 = token TOK_VOID ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("__assert_fail")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 46 ("string")
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 7
+Reducing stack by rule 16 (line 92):
+   $1 = token TOK_STRING ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 62
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("expr")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 62
+Entering state 95
+Reducing stack by rule 20 (line 109):
+   $1 = token '(' ()
+   $2 = nterm identdecl ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 69 (",")
+Next token is token ',' ()
+Shifting token ',' ()
+Entering state 97
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 46 ("string")
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 7
+Reducing stack by rule 16 (line 92):
+   $1 = token TOK_STRING ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 63 97
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("file")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 63 97
+Entering state 125
+Reducing stack by rule 19 (line 103):
+   $1 = nterm idendecls ()
+   $2 = token ',' ()
+   $3 = nterm identdecl ()
+Deleting astree (0x1677e40->{',' 5.28.32 ",":)
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 69 (",")
+Next token is token ',' ()
+Shifting token ',' ()
+Entering state 97
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 45 ("int")
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 6
+Reducing stack by rule 15 (line 91):
+   $1 = token TOK_INT ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 63 97
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("line")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 63 97
+Entering state 125
+Reducing stack by rule 19 (line 103):
+   $1 = nterm idendecls ()
+   $2 = token ',' ()
+   $3 = nterm identdecl ()
+Deleting astree (0x1677e40->{',' 5.28.45 ",":)
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x1677e40->{')' 5.28.55 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 48 ("void")
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 5
+Reducing stack by rule 14 (line 90):
+   $1 = token TOK_VOID ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("putb")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 45 ("int")
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 6
+Reducing stack by rule 15 (line 91):
+   $1 = token TOK_INT ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 62
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("b")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 62
+Entering state 95
+Reducing stack by rule 20 (line 109):
+   $1 = token '(' ()
+   $2 = nterm identdecl ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x16786d0->{')' 5.29.17 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 48 ("void")
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 5
+Reducing stack by rule 14 (line 90):
+   $1 = token TOK_VOID ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("putc")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 45 ("int")
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 6
+Reducing stack by rule 15 (line 91):
+   $1 = token TOK_INT ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 62
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("c")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 62
+Entering state 95
+Reducing stack by rule 20 (line 109):
+   $1 = token '(' ()
+   $2 = nterm identdecl ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x1678a40->{')' 5.30.17 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 48 ("void")
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 5
+Reducing stack by rule 14 (line 90):
+   $1 = token TOK_VOID ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("puti")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 45 ("int")
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 6
+Reducing stack by rule 15 (line 91):
+   $1 = token TOK_INT ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 62
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("i")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 62
+Entering state 95
+Reducing stack by rule 20 (line 109):
+   $1 = token '(' ()
+   $2 = nterm identdecl ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x1678dc0->{')' 5.31.17 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 48 ("void")
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 5
+Reducing stack by rule 14 (line 90):
+   $1 = token TOK_VOID ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("puts")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 46 ("string")
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 7
+Reducing stack by rule 16 (line 92):
+   $1 = token TOK_STRING ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 62
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("s")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 62
+Entering state 95
+Reducing stack by rule 20 (line 109):
+   $1 = token '(' ()
+   $2 = nterm identdecl ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x1679130->{')' 5.32.20 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 48 ("void")
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 5
+Reducing stack by rule 14 (line 90):
+   $1 = token TOK_VOID ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("endl")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 21 (line 115):
+   $1 = token '(' ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x16793d0->{')' 5.33.12 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 45 ("int")
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 6
+Reducing stack by rule 15 (line 91):
+   $1 = token TOK_INT ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("getc")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 21 (line 115):
+   $1 = token '(' ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x16795f0->{')' 5.34.11 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 46 ("string")
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 7
+Reducing stack by rule 16 (line 92):
+   $1 = token TOK_STRING ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("getw")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 21 (line 115):
+   $1 = token '(' ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x1679810->{')' 5.35.14 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 46 ("string")
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 7
+Reducing stack by rule 16 (line 92):
+   $1 = token TOK_STRING ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("getln")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 21 (line 115):
+   $1 = token '(' ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x1679a30->{')' 5.36.15 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 46 ("string")
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 7
+Reducing stack by rule 16 (line 92):
+   $1 = token TOK_STRING ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 78 ("[]")
+Next token is token TOK_ARRAY ()
+Shifting token TOK_ARRAY ()
+Entering state 59
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("getargv")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 92
+Reducing stack by rule 23 (line 124):
+   $1 = nterm basetype ()
+   $2 = token TOK_ARRAY ()
+   $3 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 21 (line 115):
+   $1 = token '(' ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x1679d80->{')' 5.37.19 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 48 ("void")
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 5
+Reducing stack by rule 14 (line 90):
+   $1 = token TOK_VOID ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("exit")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 62
+Reading a token: --accepting rule at line 45 ("int")
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 6
+Reducing stack by rule 15 (line 91):
+   $1 = token TOK_INT ()
+-> $$ = nterm basetype ()
+Stack now 0 2 27 62
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("status")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2 27 62
+Entering state 95
+Reducing stack by rule 20 (line 109):
+   $1 = token '(' ()
+   $2 = nterm identdecl ()
+-> $$ = nterm idendecls ()
+Stack now 0 2 27
+Entering state 63
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 96
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 21
+Reducing stack by rule 26 (line 143):
+   $1 = token ';' ()
+-> $$ = nterm block ()
+Stack now 0 2 27 63 96
+Entering state 124
+Reducing stack by rule 18 (line 96):
+   $1 = nterm identdecl ()
+   $2 = nterm idendecls ()
+   $3 = token ')' ()
+   $4 = nterm block ()
+Deleting astree (0x167a0a0->{')' 5.38.22 ")":)
+-> $$ = nterm function ()
+Stack now 0 2
+Entering state 26
+Reducing stack by rule 3 (line 49):
+   $1 = nterm program ()
+   $2 = nterm function ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 34 ("# 4 "11-numbers.oc" 2")
+--included # 4 "11-numbers.oc"
+--accepting rule at line 39 ("
+")
+--accepting rule at line 39 ("
+")
+--accepting rule at line 45 ("int")
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 6
+Reducing stack by rule 15 (line 91):
+   $1 = token TOK_INT ()
+-> $$ = nterm basetype ()
+Stack now 0 2
+Entering state 25
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("number")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 60
+Reducing stack by rule 22 (line 118):
+   $1 = nterm basetype ()
+   $2 = token TOK_IDENT ()
+-> $$ = nterm identdecl ()
+Stack now 0 2
+Entering state 27
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 62 ("=")
+Next token is token '=' ()
+Shifting token '=' ()
+Entering state 61
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 54 ("1")
+Next token is token TOK_INTCON ()
+Shifting token TOK_INTCON ()
+Entering state 15
+Reducing stack by rule 71 (line 308):
+   $1 = token TOK_INTCON ()
+-> $$ = nterm constant ()
+Stack now 0 2 27 61
+Entering state 39
+Reducing stack by rule 62 (line 253):
+   $1 = nterm constant ()
+-> $$ = nterm expr ()
+Stack now 0 2 27 61
+Entering state 93
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 123
+Reducing stack by rule 35 (line 166):
+   $1 = nterm identdecl ()
+   $2 = token '=' ()
+   $3 = nterm expr ()
+   $4 = token ';' ()
+Deleting astree (0x167a3a0->{';' 6.5.15 ";":)
+-> $$ = nterm vardecl ()
+Stack now 0 2
+Entering state 31
+Reducing stack by rule 30 (line 155):
+   $1 = nterm vardecl ()
+-> $$ = nterm statement ()
+Stack now 0 2
+Entering state 30
+Reducing stack by rule 4 (line 50):
+   $1 = nterm program ()
+   $2 = nterm statement ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 43 ("while")
+Next token is token TOK_WHILE ()
+Shifting token TOK_WHILE ()
+Entering state 9
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 43
+Reading a token: --accepting rule at line 55 ("number")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 44
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 68 (">")
+Next token is token TOK_GT ()
+Reducing stack by rule 68 (line 293):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm variable ()
+Stack now 0 2 9 43
+Entering state 38
+Reducing stack by rule 61 (line 252):
+   $1 = nterm variable ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43
+Entering state 82
+Next token is token TOK_GT ()
+Shifting token TOK_GT ()
+Entering state 70
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 54 ("0")
+Next token is token TOK_INTCON ()
+Shifting token TOK_INTCON ()
+Entering state 15
+Reducing stack by rule 71 (line 308):
+   $1 = token TOK_INTCON ()
+-> $$ = nterm constant ()
+Stack now 0 2 9 43 82 70
+Entering state 39
+Reducing stack by rule 62 (line 253):
+   $1 = nterm constant ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 70
+Entering state 102
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 53 (line 229):
+   $1 = nterm expr ()
+   $2 = token TOK_GT ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43
+Entering state 82
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 113
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 76 ("{")
+Next token is token '{' ()
+Shifting token '{' ()
+Entering state 22
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 38 ("   ")
+--accepting rule at line 55 ("puti")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 14
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 51
+Reading a token: --accepting rule at line 55 ("number")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 44
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 68 (line 293):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm variable ()
+Stack now 0 2 9 43 82 113 22 14 51
+Entering state 38
+Reducing stack by rule 61 (line 252):
+   $1 = nterm variable ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 22 14 51
+Entering state 90
+Next token is token ')' ()
+Reducing stack by rule 42 (line 216):
+   $1 = nterm expr ()
+-> $$ = nterm exprs ()
+Stack now 0 2 9 43 82 113 22 14 51
+Entering state 89
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 121
+Reducing stack by rule 67 (line 285):
+   $1 = token TOK_IDENT ()
+   $2 = token '(' ()
+   $3 = nterm exprs ()
+   $4 = token ')' ()
+Deleting astree (0x167a840->{')' 6.7.16 ")":)
+-> $$ = nterm call ()
+Stack now 0 2 9 43 82 113 22
+Entering state 37
+Reducing stack by rule 60 (line 251):
+   $1 = nterm call ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 22
+Entering state 35
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 78
+Reducing stack by rule 34 (line 159):
+   $1 = nterm expr ()
+   $2 = token ';' ()
+Deleting astree (0x167a840->{';' 6.7.17 ";":)
+-> $$ = nterm statement ()
+Stack now 0 2 9 43 82 113 22
+Entering state 57
+Reducing stack by rule 28 (line 147):
+   $1 = token '{' ()
+   $2 = nterm statement ()
+-> $$ = nterm statements ()
+Stack now 0 2 9 43 82 113
+Entering state 29
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 38 ("   ")
+--accepting rule at line 55 ("putc")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 14
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 51
+Reading a token: --accepting rule at line 52 ("'\n'")
+Next token is token TOK_CHARCON ()
+Shifting token TOK_CHARCON ()
+Entering state 16
+Reducing stack by rule 72 (line 309):
+   $1 = token TOK_CHARCON ()
+-> $$ = nterm constant ()
+Stack now 0 2 9 43 82 113 29 14 51
+Entering state 39
+Reducing stack by rule 62 (line 253):
+   $1 = nterm constant ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 29 14 51
+Entering state 90
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 42 (line 216):
+   $1 = nterm expr ()
+-> $$ = nterm exprs ()
+Stack now 0 2 9 43 82 113 29 14 51
+Entering state 89
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 121
+Reducing stack by rule 67 (line 285):
+   $1 = token TOK_IDENT ()
+   $2 = token '(' ()
+   $3 = nterm exprs ()
+   $4 = token ')' ()
+Deleting astree (0x167a9a0->{')' 6.8.14 ")":)
+-> $$ = nterm call ()
+Stack now 0 2 9 43 82 113 29
+Entering state 37
+Reducing stack by rule 60 (line 251):
+   $1 = nterm call ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 29
+Entering state 35
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 78
+Reducing stack by rule 34 (line 159):
+   $1 = nterm expr ()
+   $2 = token ';' ()
+Deleting astree (0x167a9a0->{';' 6.8.15 ";":)
+-> $$ = nterm statement ()
+Stack now 0 2 9 43 82 113 29
+Entering state 65
+Reducing stack by rule 27 (line 146):
+   $1 = nterm statements ()
+   $2 = nterm statement ()
+-> $$ = nterm statements ()
+Stack now 0 2 9 43 82 113
+Entering state 29
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 38 ("   ")
+--accepting rule at line 55 ("number")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 14
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 62 ("=")
+Next token is token '=' ()
+Reducing stack by rule 68 (line 293):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm variable ()
+Stack now 0 2 9 43 82 113 29
+Entering state 38
+Reducing stack by rule 61 (line 252):
+   $1 = nterm variable ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 29
+Entering state 35
+Next token is token '=' ()
+Shifting token '=' ()
+Entering state 72
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("number")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 44
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 56 ("+")
+Next token is token '+' ()
+Reducing stack by rule 68 (line 293):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm variable ()
+Stack now 0 2 9 43 82 113 29 35 72
+Entering state 38
+Reducing stack by rule 61 (line 252):
+   $1 = nterm variable ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 29 35 72
+Entering state 104
+Next token is token '+' ()
+Shifting token '+' ()
+Entering state 73
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 55 ("number")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 44
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Reducing stack by rule 68 (line 293):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm variable ()
+Stack now 0 2 9 43 82 113 29 35 72 104 73
+Entering state 38
+Reducing stack by rule 61 (line 252):
+   $1 = nterm variable ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 29 35 72 104 73
+Entering state 105
+Next token is token ';' ()
+Reducing stack by rule 44 (line 220):
+   $1 = nterm expr ()
+   $2 = token '+' ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 29 35 72
+Entering state 104
+Next token is token ';' ()
+Reducing stack by rule 48 (line 224):
+   $1 = nterm expr ()
+   $2 = token '=' ()
+   $3 = nterm expr ()
+-> $$ = nterm expr ()
+Stack now 0 2 9 43 82 113 29
+Entering state 35
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 78
+Reducing stack by rule 34 (line 159):
+   $1 = nterm expr ()
+   $2 = token ';' ()
+Deleting astree (0x167abf0->{';' 6.9.28 ";":)
+-> $$ = nterm statement ()
+Stack now 0 2 9 43 82 113 29
+Entering state 65
+Reducing stack by rule 27 (line 146):
+   $1 = nterm statements ()
+   $2 = nterm statement ()
+-> $$ = nterm statements ()
+Stack now 0 2 9 43 82 113
+Entering state 29
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 77 ("}")
+Next token is token '}' ()
+Shifting token '}' ()
+Entering state 64
+Reducing stack by rule 25 (line 137):
+   $1 = nterm statements ()
+   $2 = token '}' ()
+Deleting astree (0x167abf0->{'}' 6.10.1 "}":)
+-> $$ = nterm block ()
+Stack now 0 2 9 43 82 113
+Entering state 28
+Reducing stack by rule 29 (line 154):
+   $1 = nterm block ()
+-> $$ = nterm statement ()
+Stack now 0 2 9 43 82 113
+Entering state 128
+Reducing stack by rule 36 (line 174):
+   $1 = token TOK_WHILE ()
+   $2 = token '(' ()
+   $3 = nterm expr ()
+   $4 = token ')' ()
+   $5 = nterm statement ()
+Deleting astree (0x167a470->{'(' 6.6.7 "(":)
+Deleting astree (0x167a5f0->{')' 6.6.18 ")":)
+-> $$ = nterm while ()
+Stack now 0 2
+Entering state 32
+Reducing stack by rule 31 (line 156):
+   $1 = nterm while ()
+-> $$ = nterm statement ()
+Stack now 0 2
+Entering state 30
+Reducing stack by rule 4 (line 50):
+   $1 = nterm program ()
+   $2 = nterm statement ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 55 ("puti")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 14
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 51
+Reading a token: --accepting rule at line 55 ("number")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 44
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 68 (line 293):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm variable ()
+Stack now 0 2 14 51
+Entering state 38
+Reducing stack by rule 61 (line 252):
+   $1 = nterm variable ()
+-> $$ = nterm expr ()
+Stack now 0 2 14 51
+Entering state 90
+Next token is token ')' ()
+Reducing stack by rule 42 (line 216):
+   $1 = nterm expr ()
+-> $$ = nterm exprs ()
+Stack now 0 2 14 51
+Entering state 89
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 121
+Reducing stack by rule 67 (line 285):
+   $1 = token TOK_IDENT ()
+   $2 = token '(' ()
+   $3 = nterm exprs ()
+   $4 = token ')' ()
+Deleting astree (0x167acc0->{')' 6.11.13 ")":)
+-> $$ = nterm call ()
+Stack now 0 2
+Entering state 37
+Reducing stack by rule 60 (line 251):
+   $1 = nterm call ()
+-> $$ = nterm expr ()
+Stack now 0 2
+Entering state 35
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 78
+Reducing stack by rule 34 (line 159):
+   $1 = nterm expr ()
+   $2 = token ';' ()
+Deleting astree (0x167acc0->{';' 6.11.14 ";":)
+-> $$ = nterm statement ()
+Stack now 0 2
+Entering state 30
+Reducing stack by rule 4 (line 50):
+   $1 = nterm program ()
+   $2 = nterm statement ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--accepting rule at line 55 ("putc")
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 14
+Reading a token: --accepting rule at line 38 (" ")
+--accepting rule at line 72 ("(")
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 51
+Reading a token: --accepting rule at line 52 ("'\n'")
+Next token is token TOK_CHARCON ()
+Shifting token TOK_CHARCON ()
+Entering state 16
+Reducing stack by rule 72 (line 309):
+   $1 = token TOK_CHARCON ()
+-> $$ = nterm constant ()
+Stack now 0 2 14 51
+Entering state 39
+Reducing stack by rule 62 (line 253):
+   $1 = nterm constant ()
+-> $$ = nterm expr ()
+Stack now 0 2 14 51
+Entering state 90
+Reading a token: --accepting rule at line 73 (")")
+Next token is token ')' ()
+Reducing stack by rule 42 (line 216):
+   $1 = nterm expr ()
+-> $$ = nterm exprs ()
+Stack now 0 2 14 51
+Entering state 89
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 121
+Reducing stack by rule 67 (line 285):
+   $1 = token TOK_IDENT ()
+   $2 = token '(' ()
+   $3 = nterm exprs ()
+   $4 = token ')' ()
+Deleting astree (0x167ae00->{')' 6.12.11 ")":)
+-> $$ = nterm call ()
+Stack now 0 2
+Entering state 37
+Reducing stack by rule 60 (line 251):
+   $1 = nterm call ()
+-> $$ = nterm expr ()
+Stack now 0 2
+Entering state 35
+Reading a token: --accepting rule at line 71 (";")
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 78
+Reducing stack by rule 34 (line 159):
+   $1 = nterm expr ()
+   $2 = token ';' ()
+Deleting astree (0x167ae00->{';' 6.12.12 ";":)
+-> $$ = nterm statement ()
+Stack now 0 2
+Entering state 30
+Reducing stack by rule 4 (line 50):
+   $1 = nterm program ()
+   $2 = nterm statement ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 2
+Reading a token: --accepting rule at line 39 ("
+")
+--(end of buffer or a NUL)
+--EOF (start condition 0)
+Now at end of input.
+Reducing stack by rule 1 (line 45):
+   $1 = nterm program ()
+-> $$ = nterm start ()
+Stack now 0
+Entering state 1
+Now at end of input.
+Shifting token $end ()
+Entering state 3
+Stack now 0 1 3
+Cleanup: popping token $end ()
+Cleanup: popping nterm start ()

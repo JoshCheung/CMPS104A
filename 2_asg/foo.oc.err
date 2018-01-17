@@ -1,0 +1,9 @@
+foo.oc:4:19: fatal error: foo1.oh: No such file or directory
+ #include "foo1.oh"
+                   ^
+compilation terminated.
+foo.oc:4:19: fatal error: foo1.oh: No such file or directory
+ #include "foo1.oh"
+                   ^
+compilation terminated.
+/usr/bin/cpp -nostdinc foo.oc: status 0x0100, exit 1

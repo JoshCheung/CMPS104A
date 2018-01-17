@@ -1,0 +1,36 @@
+96-unterminated.oc:5:12: warning: missing terminating " character [enabled by default]
+ string s = "abc;
+            ^
+96-unterminated.oc:6:10: warning: missing terminating ' character [enabled by default]
+ char c = 'a;
+          ^
+96-unterminated.oc:7:5: warning: missing terminating " character [enabled by default]
+ s = "abcd\";
+     ^
+96-unterminated.oc:8:5: warning: missing terminating " character [enabled by default]
+ s = "abc|\
+     ^
+96-unterminated.oc:5:12: warning: missing terminating " character [enabled by default]
+ string s = "abc;
+            ^
+96-unterminated.oc:6:10: warning: missing terminating ' character [enabled by default]
+ char c = 'a;
+          ^
+96-unterminated.oc:7:5: warning: missing terminating " character [enabled by default]
+ s = "abcd\";
+     ^
+96-unterminated.oc:8:5: warning: missing terminating " character [enabled by default]
+ s = "abc|\
+     ^
+HbZ:4.12: invalid source character (")
+HbZ:4.13: invalid source character (\)
+HbZ:4.14: syntax error, unexpected '*'
+HbZ:4.16: invalid source character (")
+HbZ:5.12: invalid source character (")
+HbZ:6.10: invalid source character (')
+HbZ:7.5: invalid source character (")
+HbZ:7.10: invalid source character (\)
+HbZ:7.11: invalid source character (")
+HbZ:8.5: invalid source character (")
+HbZ:8.9: invalid source character (|)
+HbZ:10.5: syntax error, unexpected TOK_INTCON, expecting TOK_ARRAY or TOK_IDENT

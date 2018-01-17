@@ -1,0 +1,16 @@
+¿À:1.7: syntax error, unexpected '[', expecting '=' or '('
+¿À:1.19: syntax error, unexpected '{'
+¿À:2.2: invalid source character (|)
+¿À:2.15: syntax error, unexpected ';'
+¿À:2.19: invalid source character (?)
+¿À:2.20: syntax error, unexpected '!'
+¿À:2.33: invalid source character (:)
+¿À:3.14: invalid source character (&)
+¿À:3.16: invalid source character (|)
+¿À:3.18: invalid source character (&)
+¿À:3.20: invalid source character (|)
+¿À:3.21: invalid source character (|)
+¿À:3.29: invalid source character (|)
+¿À:3.33: invalid source character (|)
+¿À:4.18: syntax error, unexpected '{'
+¿À:4.36: syntax error, unexpected '}'

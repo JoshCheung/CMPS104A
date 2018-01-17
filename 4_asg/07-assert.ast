@@ -1,0 +1,74 @@
+ROOT "" 0.0.0
+|  PROTOTYPE "" 5.28.1
+|  |  VOID "void" 5.28.1
+|  |  |  IDENT "__assert_fail" 5.28.6
+|  |  '(' "(" 5.28.20
+|  |  |  STRING "string" 5.28.21
+|  |  |  |  IDENT "expr" 5.28.28
+|  |  |  STRING "string" 5.28.34
+|  |  |  |  IDENT "file" 5.28.41
+|  |  |  INT "int" 5.28.47
+|  |  |  |  IDENT "line" 5.28.51
+|  PROTOTYPE "" 5.29.1
+|  |  VOID "void" 5.29.1
+|  |  |  IDENT "putb" 5.29.6
+|  |  '(' "(" 5.29.11
+|  |  |  INT "int" 5.29.12
+|  |  |  |  IDENT "b" 5.29.16
+|  PROTOTYPE "" 5.30.1
+|  |  VOID "void" 5.30.1
+|  |  |  IDENT "putc" 5.30.6
+|  |  '(' "(" 5.30.11
+|  |  |  INT "int" 5.30.12
+|  |  |  |  IDENT "c" 5.30.16
+|  PROTOTYPE "" 5.31.1
+|  |  VOID "void" 5.31.1
+|  |  |  IDENT "puti" 5.31.6
+|  |  '(' "(" 5.31.11
+|  |  |  INT "int" 5.31.12
+|  |  |  |  IDENT "i" 5.31.16
+|  PROTOTYPE "" 5.32.1
+|  |  VOID "void" 5.32.1
+|  |  |  IDENT "puts" 5.32.6
+|  |  '(' "(" 5.32.11
+|  |  |  STRING "string" 5.32.12
+|  |  |  |  IDENT "s" 5.32.19
+|  PROTOTYPE "" 5.33.1
+|  |  VOID "void" 5.33.1
+|  |  |  IDENT "endl" 5.33.6
+|  |  '(' "(" 5.33.11
+|  PROTOTYPE "" 5.34.1
+|  |  INT "int" 5.34.1
+|  |  |  IDENT "getc" 5.34.5
+|  |  '(' "(" 5.34.10
+|  PROTOTYPE "" 5.35.1
+|  |  STRING "string" 5.35.1
+|  |  |  IDENT "getw" 5.35.8
+|  |  '(' "(" 5.35.13
+|  PROTOTYPE "" 5.36.1
+|  |  STRING "string" 5.36.1
+|  |  |  IDENT "getln" 5.36.8
+|  |  '(' "(" 5.36.14
+|  PROTOTYPE "" 5.37.7
+|  |  ARRAY "[]" 5.37.7
+|  |  |  STRING "string" 5.37.1
+|  |  |  IDENT "getargv" 5.37.10
+|  |  '(' "(" 5.37.18
+|  PROTOTYPE "" 5.38.1
+|  |  VOID "void" 5.38.1
+|  |  |  IDENT "exit" 5.38.6
+|  |  '(' "(" 5.38.11
+|  |  |  INT "int" 5.38.12
+|  |  |  |  IDENT "status" 5.38.16
+|  '{' "{" 6.4.1
+|  |  IF "if" 6.4.2
+|  |  |  '!' "!" 6.4.6
+|  |  |  |  EQ "==" 6.4.15
+|  |  |  |  |  STRINGCON ""null"" 6.4.8
+|  |  |  |  |  NULL "null" 6.4.18
+|  |  |  '(' "(" 6.4.39
+|  |  |  |  IDENT "__assert_fail" 6.4.25
+|  |  |  |  STRINGCON ""\"null\" == null"" 6.4.40
+|  |  |  |  |  STRINGCON ""07-assert.oc"" 6.4.60
+|  |  |  |  |  |  INTCON "4" 6.4.76
+|  ';' ";" 6.4.80

@@ -1,0 +1,11 @@
+foo (3.9.6) {0} void 
+
+foo (3.10.6) {0} void 
+
+foo (3.11.6) {0} void function 
+    int (3.11.11) {0} int lval 
+    int (3.11.20) {0} int lval 
+
+foo (3.12.8) {0} struct 
+  a (3.12.18) {0} int variable lval 
+

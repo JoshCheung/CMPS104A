@@ -1,0 +1,15 @@
+ROOT "" 0.0.0
+|  '=' "=" 3.5.10
+|  |  STRING "string" 3.5.1
+|  |  |  IDENT "s" 3.5.8
+|  |  IDENT "abc" 3.5.13
+|  '=' "=" 3.6.8
+|  |  IDENT "char" 3.6.1
+|  |  |  IDENT "c" 3.6.6
+|  |  IDENT "a" 3.6.11
+|  '=' "=" 3.7.3
+|  |  IDENT "s" 3.7.1
+|  |  IDENT "abcd" 3.7.6
+|  '=' "=" 3.8.3
+|  |  IDENT "s" 3.8.1
+|  |  IDENT "abc" 3.8.6

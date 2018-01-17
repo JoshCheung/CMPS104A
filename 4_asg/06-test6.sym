@@ -1,0 +1,36 @@
+__assert_fail (5.28.6) {0} void 
+
+putb (5.29.6) {0} void 
+
+putc (5.30.6) {0} void 
+
+puti (5.31.6) {0} void 
+
+puts (5.32.6) {0} void 
+
+endl (5.33.6) {0} void 
+
+getc (5.34.5) {0} int 
+
+getw (5.35.8) {0} string 
+
+getln (5.36.8) {0} string 
+
+string (5.37.1) {0} string 
+
+exit (5.38.6) {0} void 
+
+foo (6.5.8) {0} struct 
+
+bar (6.6.8) {0} struct 
+
+f0 (6.8.5) {0} int 
+
+f1 (6.9.5) {0} int 
+
+f2 (6.10.5) {0} int 
+
+f3 (6.11.5) {0} int 
+
+f4 (6.12.5) {0} int 
+

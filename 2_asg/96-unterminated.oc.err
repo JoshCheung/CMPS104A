@@ -1,0 +1,34 @@
+96-unterminated.oc:5:12: warning: missing terminating " character [enabled by default]
+ string s = "abc;
+            ^
+96-unterminated.oc:6:10: warning: missing terminating ' character [enabled by default]
+ char c = 'a;
+          ^
+96-unterminated.oc:7:5: warning: missing terminating " character [enabled by default]
+ s = "abcd\";
+     ^
+96-unterminated.oc:8:5: warning: missing terminating " character [enabled by default]
+ s = "abc|\
+     ^
+96-unterminated.oc:5:12: warning: missing terminating " character [enabled by default]
+ string s = "abc;
+            ^
+96-unterminated.oc:6:10: warning: missing terminating ' character [enabled by default]
+ char c = 'a;
+          ^
+96-unterminated.oc:7:5: warning: missing terminating " character [enabled by default]
+ s = "abcd\";
+     ^
+96-unterminated.oc:8:5: warning: missing terminating " character [enabled by default]
+ s = "abc|\
+     ^
+hô—:4.12: invalid source character (")
+hô—:4.13: invalid source character (\)
+hô—:4.16: invalid source character (")
+hô—:5.12: invalid source character (")
+hô—:6.10: invalid source character (')
+hô—:7.5: invalid source character (")
+hô—:7.10: invalid source character (\)
+hô—:7.11: invalid source character (")
+hô—:8.5: invalid source character (")
+hô—:8.9: invalid source character (|)

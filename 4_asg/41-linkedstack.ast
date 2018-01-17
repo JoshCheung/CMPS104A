@@ -1,0 +1,243 @@
+ROOT "" 0.0.0
+|  PROTOTYPE "" 5.28.1
+|  |  VOID "void" 5.28.1
+|  |  |  IDENT "__assert_fail" 5.28.6
+|  |  '(' "(" 5.28.20
+|  |  |  STRING "string" 5.28.21
+|  |  |  |  IDENT "expr" 5.28.28
+|  |  |  STRING "string" 5.28.34
+|  |  |  |  IDENT "file" 5.28.41
+|  |  |  INT "int" 5.28.47
+|  |  |  |  IDENT "line" 5.28.51
+|  PROTOTYPE "" 5.29.1
+|  |  VOID "void" 5.29.1
+|  |  |  IDENT "putb" 5.29.6
+|  |  '(' "(" 5.29.11
+|  |  |  INT "int" 5.29.12
+|  |  |  |  IDENT "b" 5.29.16
+|  PROTOTYPE "" 5.30.1
+|  |  VOID "void" 5.30.1
+|  |  |  IDENT "putc" 5.30.6
+|  |  '(' "(" 5.30.11
+|  |  |  INT "int" 5.30.12
+|  |  |  |  IDENT "c" 5.30.16
+|  PROTOTYPE "" 5.31.1
+|  |  VOID "void" 5.31.1
+|  |  |  IDENT "puti" 5.31.6
+|  |  '(' "(" 5.31.11
+|  |  |  INT "int" 5.31.12
+|  |  |  |  IDENT "i" 5.31.16
+|  PROTOTYPE "" 5.32.1
+|  |  VOID "void" 5.32.1
+|  |  |  IDENT "puts" 5.32.6
+|  |  '(' "(" 5.32.11
+|  |  |  STRING "string" 5.32.12
+|  |  |  |  IDENT "s" 5.32.19
+|  PROTOTYPE "" 5.33.1
+|  |  VOID "void" 5.33.1
+|  |  |  IDENT "endl" 5.33.6
+|  |  '(' "(" 5.33.11
+|  PROTOTYPE "" 5.34.1
+|  |  INT "int" 5.34.1
+|  |  |  IDENT "getc" 5.34.5
+|  |  '(' "(" 5.34.10
+|  PROTOTYPE "" 5.35.1
+|  |  STRING "string" 5.35.1
+|  |  |  IDENT "getw" 5.35.8
+|  |  '(' "(" 5.35.13
+|  PROTOTYPE "" 5.36.1
+|  |  STRING "string" 5.36.1
+|  |  |  IDENT "getln" 5.36.8
+|  |  '(' "(" 5.36.14
+|  PROTOTYPE "" 5.37.7
+|  |  ARRAY "[]" 5.37.7
+|  |  |  STRING "string" 5.37.1
+|  |  |  IDENT "getargv" 5.37.10
+|  |  '(' "(" 5.37.18
+|  PROTOTYPE "" 5.38.1
+|  |  VOID "void" 5.38.1
+|  |  |  IDENT "exit" 5.38.6
+|  |  '(' "(" 5.38.11
+|  |  |  INT "int" 5.38.12
+|  |  |  |  IDENT "status" 5.38.16
+|  STRUCT "struct" 6.5.1
+|  |  IDENT "node" 6.5.8
+|  |  STRING "string" 6.6.4
+|  |  |  IDENT "data" 6.6.11
+|  |  |  IDENT "node" 6.7.4
+|  |  |  |  IDENT "link" 6.7.9
+|  STRUCT "struct" 6.10.1
+|  |  IDENT "stack" 6.10.8
+|  |  IDENT "node" 6.11.4
+|  |  |  IDENT "top" 6.11.9
+|  FUNCTION "" 6.14.1
+|  |  INT "int" 6.14.1
+|  |  |  IDENT "empty" 6.14.5
+|  |  '(' "(" 6.14.11
+|  |  |  IDENT "stack" 6.14.12
+|  |  |  |  IDENT "stack" 6.14.18
+|  |  '{' "{" 6.14.25
+|  |  |  '{' "{" 6.15.4
+|  |  |  |  IF "if" 6.15.5
+|  |  |  |  |  '!' "!" 6.15.9
+|  |  |  |  |  |  NE "!=" 6.15.17
+|  |  |  |  |  |  |  IDENT "stack" 6.15.11
+|  |  |  |  |  |  |  NULL "null" 6.15.20
+|  |  |  |  |  '(' "(" 6.15.41
+|  |  |  |  |  |  IDENT "__assert_fail" 6.15.27
+|  |  |  |  |  |  STRINGCON ""stack != null"" 6.15.42
+|  |  |  |  |  |  |  STRINGCON ""41-linkedstack.oc"" 6.15.59
+|  |  |  |  |  |  |  |  INTCON "15" 6.15.80
+|  |  |  ';' ";" 6.15.85
+|  |  |  RETURN "return" 6.16.4
+|  |  |  |  EQ "==" 6.16.21
+|  |  |  |  |  IDENT "stack" 6.16.11
+|  |  |  |  |  |  IDENT "top" 6.16.17
+|  |  |  |  |  NULL "null" 6.16.24
+|  FUNCTION "" 6.19.1
+|  |  IDENT "stack" 6.19.1
+|  |  |  IDENT "new_stack" 6.19.7
+|  |  '(' "(" 6.19.17
+|  |  '{' "{" 6.19.20
+|  |  |  '=' "=" 6.20.16
+|  |  |  |  IDENT "stack" 6.20.4
+|  |  |  |  |  IDENT "stack" 6.20.10
+|  |  |  |  NEW "new" 6.20.18
+|  |  |  |  |  IDENT "stack" 6.20.22
+|  |  |  '=' "=" 6.21.14
+|  |  |  |  IDENT "stack" 6.21.4
+|  |  |  |  |  IDENT "top" 6.21.10
+|  |  |  |  NULL "null" 6.21.16
+|  |  |  RETURN "return" 6.22.4
+|  |  |  |  IDENT "stack" 6.22.11
+|  FUNCTION "" 6.25.1
+|  |  VOID "void" 6.25.1
+|  |  |  IDENT "push" 6.25.6
+|  |  '(' "(" 6.25.11
+|  |  |  IDENT "stack" 6.25.12
+|  |  |  |  IDENT "stack" 6.25.18
+|  |  |  STRING "string" 6.25.25
+|  |  |  |  IDENT "str" 6.25.32
+|  |  '{' "{" 6.25.37
+|  |  |  '{' "{" 6.26.4
+|  |  |  |  IF "if" 6.26.5
+|  |  |  |  |  '!' "!" 6.26.9
+|  |  |  |  |  |  NE "!=" 6.26.17
+|  |  |  |  |  |  |  IDENT "stack" 6.26.11
+|  |  |  |  |  |  |  NULL "null" 6.26.20
+|  |  |  |  |  '(' "(" 6.26.41
+|  |  |  |  |  |  IDENT "__assert_fail" 6.26.27
+|  |  |  |  |  |  STRINGCON ""stack != null"" 6.26.42
+|  |  |  |  |  |  |  STRINGCON ""41-linkedstack.oc"" 6.26.59
+|  |  |  |  |  |  |  |  INTCON "26" 6.26.80
+|  |  |  ';' ";" 6.26.85
+|  |  |  '=' "=" 6.27.13
+|  |  |  |  IDENT "node" 6.27.4
+|  |  |  |  |  IDENT "tmp" 6.27.9
+|  |  |  |  NEW "new" 6.27.15
+|  |  |  |  |  IDENT "node" 6.27.19
+|  |  |  '=' "=" 6.28.13
+|  |  |  |  IDENT "tmp" 6.28.4
+|  |  |  |  |  IDENT "data" 6.28.8
+|  |  |  |  IDENT "str" 6.28.15
+|  |  |  '=' "=" 6.29.13
+|  |  |  |  IDENT "tmp" 6.29.4
+|  |  |  |  |  IDENT "link" 6.29.8
+|  |  |  |  IDENT "stack" 6.29.15
+|  |  |  |  |  IDENT "top" 6.29.21
+|  |  |  '=' "=" 6.30.14
+|  |  |  |  IDENT "stack" 6.30.4
+|  |  |  |  |  IDENT "top" 6.30.10
+|  |  |  |  IDENT "tmp" 6.30.16
+|  FUNCTION "" 6.33.1
+|  |  STRING "string" 6.33.1
+|  |  |  IDENT "pop" 6.33.8
+|  |  '(' "(" 6.33.12
+|  |  |  IDENT "stack" 6.33.13
+|  |  |  |  IDENT "stack" 6.33.19
+|  |  '{' "{" 6.33.26
+|  |  |  '{' "{" 6.34.4
+|  |  |  |  IF "if" 6.34.5
+|  |  |  |  |  '!' "!" 6.34.9
+|  |  |  |  |  |  NE "!=" 6.34.17
+|  |  |  |  |  |  |  IDENT "stack" 6.34.11
+|  |  |  |  |  |  |  NULL "null" 6.34.20
+|  |  |  |  |  '(' "(" 6.34.41
+|  |  |  |  |  |  IDENT "__assert_fail" 6.34.27
+|  |  |  |  |  |  STRINGCON ""stack != null"" 6.34.42
+|  |  |  |  |  |  |  STRINGCON ""41-linkedstack.oc"" 6.34.59
+|  |  |  |  |  |  |  |  INTCON "34" 6.34.80
+|  |  |  ';' ";" 6.34.85
+|  |  |  '{' "{" 6.35.4
+|  |  |  |  IF "if" 6.35.5
+|  |  |  |  |  '!' "!" 6.35.9
+|  |  |  |  |  |  '!' "!" 6.35.11
+|  |  |  |  |  |  |  '(' "(" 6.35.19
+|  |  |  |  |  |  |  |  IDENT "empty" 6.35.13
+|  |  |  |  |  |  |  |  IDENT "stack" 6.35.20
+|  |  |  |  |  '(' "(" 6.35.43
+|  |  |  |  |  |  IDENT "__assert_fail" 6.35.29
+|  |  |  |  |  |  STRINGCON ""! empty (stack)"" 6.35.44
+|  |  |  |  |  |  |  STRINGCON ""41-linkedstack.oc"" 6.35.63
+|  |  |  |  |  |  |  |  INTCON "35" 6.35.84
+|  |  |  ';' ";" 6.35.89
+|  |  |  '=' "=" 6.36.15
+|  |  |  |  STRING "string" 6.36.4
+|  |  |  |  |  IDENT "tmp" 6.36.11
+|  |  |  |  IDENT "stack" 6.36.17
+|  |  |  |  |  IDENT "top" 6.36.23
+|  |  |  |  |  IDENT "data" 6.36.27
+|  |  |  '=' "=" 6.37.14
+|  |  |  |  IDENT "stack" 6.37.4
+|  |  |  |  |  IDENT "top" 6.37.10
+|  |  |  |  IDENT "stack" 6.37.16
+|  |  |  |  |  IDENT "top" 6.37.22
+|  |  |  |  |  IDENT "link" 6.37.26
+|  |  |  RETURN "return" 6.38.4
+|  |  |  |  IDENT "tmp" 6.38.11
+|  '=' "=" 6.43.15
+|  |  ARRAY "[]" 6.43.7
+|  |  |  STRING "string" 6.43.1
+|  |  |  IDENT "argv" 6.43.10
+|  |  '(' "(" 6.43.25
+|  |  |  IDENT "getargv" 6.43.17
+|  '=' "=" 6.44.13
+|  |  IDENT "stack" 6.44.1
+|  |  |  IDENT "stack" 6.44.7
+|  |  '(' "(" 6.44.25
+|  |  |  IDENT "new_stack" 6.44.15
+|  '=' "=" 6.45.10
+|  |  INT "int" 6.45.1
+|  |  |  IDENT "argi" 6.45.5
+|  |  INTCON "0" 6.45.12
+|  WHILE "while" 6.47.1
+|  |  NE "!=" 6.47.19
+|  |  |  '[' "[" 6.47.12
+|  |  |  |  IDENT "argv" 6.47.8
+|  |  |  |  IDENT "argi" 6.47.13
+|  |  |  NULL "null" 6.47.22
+|  |  '{' "{" 6.47.28
+|  |  |  '(' "(" 6.48.9
+|  |  |  |  IDENT "push" 6.48.4
+|  |  |  |  IDENT "stack" 6.48.10
+|  |  |  |  |  '[' "[" 6.48.21
+|  |  |  |  |  |  IDENT "argv" 6.48.17
+|  |  |  |  |  |  IDENT "argi" 6.48.22
+|  |  |  '=' "=" 6.49.9
+|  |  |  |  IDENT "argi" 6.49.4
+|  |  |  |  '+' "+" 6.49.16
+|  |  |  |  |  IDENT "argi" 6.49.11
+|  |  |  |  |  INTCON "1" 6.49.18
+|  WHILE "while" 6.52.1
+|  |  '!' "!" 6.52.8
+|  |  |  '(' "(" 6.52.16
+|  |  |  |  IDENT "empty" 6.52.10
+|  |  |  |  IDENT "stack" 6.52.17
+|  |  '{' "{" 6.52.25
+|  |  |  '(' "(" 6.53.9
+|  |  |  |  IDENT "puts" 6.53.4
+|  |  |  |  '(' "(" 6.53.14
+|  |  |  |  |  IDENT "pop" 6.53.10
+|  |  |  |  |  IDENT "stack" 6.53.15
+|  |  |  '(' "(" 6.54.9
+|  |  |  |  IDENT "endl" 6.54.4

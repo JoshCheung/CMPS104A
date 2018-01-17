@@ -1,0 +1,16 @@
+# 1 "foo.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "foo.oc"
+   3 1.1   276  TOK_IDENT  (line)
+   3 1.6   261  TOK_STRING (1)
+   3 2.1   279  TOK_STRINGCON ("foo.oc")
+   3 2.10  261  TOK_STRING (2)
+   3 2.12  279  TOK_STRINGCON ("Nov  6 2017")
+   3 2.26  279  TOK_STRINGCON ("15:04:01")
+   3 3.1   276  TOK_IDENT  (foo)
+   3 3.4   46   '.'        (.)
+   3 3.5   276  TOK_IDENT  (oc)
+   3 3.7   44   ','        (,)
+   3 3.9   276  TOK_IDENT  (line)
+   3 3.14  261  TOK_STRING (3.)

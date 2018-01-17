@@ -1,0 +1,35 @@
+__assert_fail (5.28.6) {0} void 
+
+putb (5.29.6) {0} void 
+
+putc (5.30.6) {0} void 
+
+puti (5.31.6) {0} void 
+
+puts (5.32.6) {0} void 
+
+endl (5.33.6) {0} void 
+
+getc (5.34.5) {0} int 
+
+getw (5.35.8) {0} string 
+
+getln (5.36.8) {0} string 
+
+string (5.37.1) {0} string 
+
+exit (5.38.6) {0} void 
+
+strcmp (6.8.5) {0} int function 
+    s1 (6.8.20) {0} string variable lval 
+    s2 (6.8.31) {0} string variable lval 
+
+insertion_sort (6.22.6) {0} void function 
+    size (6.22.26) {0} int variable lval 
+    string (6.22.32) {0} string lval 
+
+print_array (6.43.6) {0} void function 
+    label (6.43.26) {0} string variable lval 
+    size (6.43.37) {0} int variable lval 
+    string (6.43.43) {0} string lval 
+

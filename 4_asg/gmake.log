@@ -1,0 +1,55 @@
+Makefile:69: warning: overriding recipe for target 'yylex.cpp'
+Makefile:62: warning: ignoring old recipe for target 'yylex.cpp'
+Makefile:72: warning: overriding recipe for target 'yyparse.cpp'
+Makefile:65: warning: ignoring old recipe for target 'yyparse.cpp'
+Makefile:72: warning: overriding recipe for target 'yyparse.h'
+Makefile:65: warning: ignoring old recipe for target 'yyparse.h'
+Makefile:123: Makefile.deps: No such file or directory
+gmake --no-print-directory deps
+Makefile:69: warning: overriding recipe for target 'yylex.cpp'
+Makefile:62: warning: ignoring old recipe for target 'yylex.cpp'
+Makefile:72: warning: overriding recipe for target 'yyparse.cpp'
+Makefile:65: warning: ignoring old recipe for target 'yyparse.cpp'
+Makefile:72: warning: overriding recipe for target 'yyparse.h'
+Makefile:65: warning: ignoring old recipe for target 'yyparse.h'
+flex --outfile=yylex.cpp scanner.l
+flex version 2.5.37 usage statistics:
+  scanner options: -dsvI8 -Cem -oyylex.cpp
+  260/2000 NFA states
+  88/1000 DFA states (475 words)
+  42 rules
+  Compressed tables always back-up
+  1/40 start conditions
+  155 epsilon states, 69 double epsilon states
+  22/100 character classes needed 215/500 words of storage, 0 reused
+  1161 state/nextstate pairs created
+  214/947 unique/duplicate transitions
+  93/1000 base-def entries created
+  189/2000 (peak 299) nxt-chk entries created
+  20/2500 (peak 225) template nxt-chk entries created
+  0 empty table entries
+  5 protos created
+  5 templates created, 45 uses
+  45/256 equivalence classes created
+  4/256 meta-equivalence classes created
+  0 (0 saved) hash collisions, 129 DFAs equal
+  0 sets of reallocations needed
+  865 total table entries needed
+bison --defines=yyparse.h --output=yyparse.cpp parser.y
+parser.y: warning: 30 shift/reduce conflicts [-Wconflicts-sr]
+g++ -MM -std=gnu++14 astree.cpp lyutils.cpp string_set.cpp auxlib.cpp symbol_table.cpp main.cpp yylex.cpp yyparse.cpp >>Makefile.deps
+Makefile:69: warning: overriding recipe for target 'yylex.cpp'
+Makefile:62: warning: ignoring old recipe for target 'yylex.cpp'
+Makefile:72: warning: overriding recipe for target 'yyparse.cpp'
+Makefile:65: warning: ignoring old recipe for target 'yyparse.cpp'
+Makefile:72: warning: overriding recipe for target 'yyparse.h'
+Makefile:65: warning: ignoring old recipe for target 'yyparse.h'
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c astree.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c lyutils.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c string_set.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c auxlib.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c symbol_table.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c main.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -Wno-sign-compare -c yylex.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -c yyparse.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++14 -ooc astree.o lyutils.o string_set.o auxlib.o symbol_table.o main.o yylex.o yyparse.o

@@ -1,0 +1,140 @@
+ROOT "" 0.0.0
+|  PROTOTYPE "" 5.28.1
+|  |  VOID "void" 5.28.1
+|  |  |  IDENT "__assert_fail" 5.28.6
+|  |  '(' "(" 5.28.20
+|  |  |  STRING "string" 5.28.21
+|  |  |  |  IDENT "expr" 5.28.28
+|  |  |  STRING "string" 5.28.34
+|  |  |  |  IDENT "file" 5.28.41
+|  |  |  INT "int" 5.28.47
+|  |  |  |  IDENT "line" 5.28.51
+|  PROTOTYPE "" 5.29.1
+|  |  VOID "void" 5.29.1
+|  |  |  IDENT "putb" 5.29.6
+|  |  '(' "(" 5.29.11
+|  |  |  INT "int" 5.29.12
+|  |  |  |  IDENT "b" 5.29.16
+|  PROTOTYPE "" 5.30.1
+|  |  VOID "void" 5.30.1
+|  |  |  IDENT "putc" 5.30.6
+|  |  '(' "(" 5.30.11
+|  |  |  INT "int" 5.30.12
+|  |  |  |  IDENT "c" 5.30.16
+|  PROTOTYPE "" 5.31.1
+|  |  VOID "void" 5.31.1
+|  |  |  IDENT "puti" 5.31.6
+|  |  '(' "(" 5.31.11
+|  |  |  INT "int" 5.31.12
+|  |  |  |  IDENT "i" 5.31.16
+|  PROTOTYPE "" 5.32.1
+|  |  VOID "void" 5.32.1
+|  |  |  IDENT "puts" 5.32.6
+|  |  '(' "(" 5.32.11
+|  |  |  STRING "string" 5.32.12
+|  |  |  |  IDENT "s" 5.32.19
+|  PROTOTYPE "" 5.33.1
+|  |  VOID "void" 5.33.1
+|  |  |  IDENT "endl" 5.33.6
+|  |  '(' "(" 5.33.11
+|  PROTOTYPE "" 5.34.1
+|  |  INT "int" 5.34.1
+|  |  |  IDENT "getc" 5.34.5
+|  |  '(' "(" 5.34.10
+|  PROTOTYPE "" 5.35.1
+|  |  STRING "string" 5.35.1
+|  |  |  IDENT "getw" 5.35.8
+|  |  '(' "(" 5.35.13
+|  PROTOTYPE "" 5.36.1
+|  |  STRING "string" 5.36.1
+|  |  |  IDENT "getln" 5.36.8
+|  |  '(' "(" 5.36.14
+|  PROTOTYPE "" 5.37.7
+|  |  ARRAY "[]" 5.37.7
+|  |  |  STRING "string" 5.37.1
+|  |  |  IDENT "getargv" 5.37.10
+|  |  '(' "(" 5.37.18
+|  PROTOTYPE "" 5.38.1
+|  |  VOID "void" 5.38.1
+|  |  |  IDENT "exit" 5.38.6
+|  |  '(' "(" 5.38.11
+|  |  |  INT "int" 5.38.12
+|  |  |  |  IDENT "status" 5.38.16
+|  '=' "=" 6.9.17
+|  |  ARRAY "[]" 6.9.4
+|  |  |  INT "int" 6.9.1
+|  |  |  IDENT "fibonacci" 6.9.7
+|  |  NEW "new" 6.9.19
+|  |  |  INT "int" 6.9.23
+|  |  |  INTCON "30" 6.9.27
+|  '=' "=" 6.11.14
+|  |  '[' "[" 6.11.10
+|  |  |  IDENT "fibonacci" 6.11.1
+|  |  |  INTCON "0" 6.11.11
+|  |  INTCON "0" 6.11.16
+|  '=' "=" 6.12.14
+|  |  '[' "[" 6.12.10
+|  |  |  IDENT "fibonacci" 6.12.1
+|  |  |  INTCON "1" 6.12.11
+|  |  INTCON "1" 6.12.16
+|  '=' "=" 6.14.11
+|  |  INT "int" 6.14.1
+|  |  |  IDENT "index" 6.14.5
+|  |  INTCON "2" 6.14.13
+|  WHILE "while" 6.15.1
+|  |  LT "<" 6.15.14
+|  |  |  IDENT "index" 6.15.8
+|  |  |  INTCON "30" 6.15.16
+|  |  '{' "{" 6.15.20
+|  |  |  '=' "=" 6.16.21
+|  |  |  |  '[' "[" 6.16.13
+|  |  |  |  |  IDENT "fibonacci" 6.16.4
+|  |  |  |  |  IDENT "index" 6.16.14
+|  |  |  |  '+' "+" 6.16.44
+|  |  |  |  |  '[' "[" 6.16.32
+|  |  |  |  |  |  IDENT "fibonacci" 6.16.23
+|  |  |  |  |  |  '-' "-" 6.16.39
+|  |  |  |  |  |  |  IDENT "index" 6.16.33
+|  |  |  |  |  |  |  INTCON "1" 6.16.41
+|  |  |  |  |  '[' "[" 6.16.55
+|  |  |  |  |  |  IDENT "fibonacci" 6.16.46
+|  |  |  |  |  |  '-' "-" 6.16.62
+|  |  |  |  |  |  |  IDENT "index" 6.16.56
+|  |  |  |  |  |  |  INTCON "2" 6.16.64
+|  |  |  '=' "=" 6.17.10
+|  |  |  |  IDENT "index" 6.17.4
+|  |  |  |  '+' "+" 6.17.18
+|  |  |  |  |  IDENT "index" 6.17.12
+|  |  |  |  |  INTCON "1" 6.17.20
+|  '=' "=" 6.20.7
+|  |  IDENT "index" 6.20.1
+|  |  INTCON "0" 6.20.9
+|  '(' "(" 6.21.6
+|  |  IDENT "puts" 6.21.1
+|  |  STRINGCON ""Numeri di figlio Bonacci\n"" 6.21.7
+|  WHILE "while" 6.22.1
+|  |  LT "<" 6.22.14
+|  |  |  IDENT "index" 6.22.8
+|  |  |  INTCON "30" 6.22.16
+|  |  '{' "{" 6.22.20
+|  |  |  '(' "(" 6.23.9
+|  |  |  |  IDENT "puts" 6.23.4
+|  |  |  |  STRINGCON ""fibonacci["" 6.23.10
+|  |  |  '(' "(" 6.24.9
+|  |  |  |  IDENT "puti" 6.24.4
+|  |  |  |  IDENT "index" 6.24.10
+|  |  |  '(' "(" 6.25.9
+|  |  |  |  IDENT "puts" 6.25.4
+|  |  |  |  STRINGCON ""] = "" 6.25.10
+|  |  |  '(' "(" 6.26.9
+|  |  |  |  IDENT "puti" 6.26.4
+|  |  |  |  '[' "[" 6.26.19
+|  |  |  |  |  IDENT "fibonacci" 6.26.10
+|  |  |  |  |  IDENT "index" 6.26.20
+|  |  |  '(' "(" 6.27.9
+|  |  |  |  IDENT "endl" 6.27.4
+|  |  |  '=' "=" 6.28.10
+|  |  |  |  IDENT "index" 6.28.4
+|  |  |  |  '+' "+" 6.28.18
+|  |  |  |  |  IDENT "index" 6.28.12
+|  |  |  |  |  INTCON "1" 6.28.20
